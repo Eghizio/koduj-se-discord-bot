@@ -1,4 +1,4 @@
-import { Logger } from "./Logger";
+import { Logger } from "./Logger.js";
 
 export const FIFTEEN_MINUTES_ms = 15 * 60 * 1_000;
 

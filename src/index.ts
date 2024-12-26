@@ -1,10 +1,10 @@
 import { Client, Events, GatewayIntentBits } from "discord.js";
-import { Config } from "./Config";
+import { Config } from "./Config.js";
 import {
   collectAllCommands,
   registerCommands,
   handleCommands,
-} from "./commands/commands";
+} from "./commands/commands.js";
 
 const config = new Config();
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });

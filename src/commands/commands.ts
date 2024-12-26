@@ -11,7 +11,7 @@ import {
   REST,
   Routes,
 } from "discord.js";
-import type { Config } from "../Config";
+import type { Config } from "../Config.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 

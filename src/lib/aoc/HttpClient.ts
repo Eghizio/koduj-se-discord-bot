@@ -1,5 +1,5 @@
-import { Cache } from "./Cache";
-import { Logger } from "./Logger";
+import { Cache } from "./Cache.js";
+import { Logger } from "./Logger.js";
 
 type Options = RequestInit;
 type HttpMethod = Options["method"];

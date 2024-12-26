@@ -1,7 +1,9 @@
 {
   "type": "module",
   "scripts": {
-    "start": "dotenvx run -- tsx ./src/index.ts"
+    "dev": "dotenvx run -- tsx ./src/index.ts",
+    "build": "tsc",
+    "start": "dotenvx run -- node ./dist/index.js"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^1.26.2",
