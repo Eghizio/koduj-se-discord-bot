@@ -78,14 +78,13 @@ export const handleCommands =
   (commands: Commands) => async (interaction: Interaction<CacheType>) => {
     if (!interaction.isChatInputCommand()) return;
 
-    console.log(interaction);
+    const commandName = interaction.commandName;
+    console.log(`Received command "${commandName}".`);
 
-    const command = commands.get(interaction.commandName);
+    const command = commands.get(commandName);
 
     if (!command) {
-      console.error(
-        `No command matching ${interaction.commandName} was found.`
-      );
+      console.error(`No command matching "${commandName}" was found.`);
       return;
     }
 
