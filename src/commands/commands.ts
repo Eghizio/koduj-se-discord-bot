@@ -5,7 +5,7 @@ import {
   type CacheType,
   type ChatInputCommandInteraction,
   type Interaction,
-  type SlashCommandBuilder,
+  type SharedSlashCommand,
   Collection,
   MessageFlags,
   REST,
@@ -16,7 +16,7 @@ import type { Config } from "../Config.js";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export interface BotCommand {
-  data: SlashCommandBuilder;
+  data: SharedSlashCommand;
   execute: (
     interaction: ChatInputCommandInteraction<CacheType>
   ) => Promise<void>;
